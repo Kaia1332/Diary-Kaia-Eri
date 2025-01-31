@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary Entry Application</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container diary-app">
+        <h1 class="text-center mt-4">My Diary</h1>
+
+        <div class="form-group">
+            <label for="entryDate">Select Date:</label>
+            <input type="date" id="entryDate" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="entryText">Diary Entry:</label>
+            <textarea id="entryText" class="form-control" rows="4" placeholder="Write your diary entry..."></textarea>
+        </div>
+
+        <button id="saveEntry" class="btn btn-primary">Save Entry</button>
+
+        <h2 class="mt-4">Diary Entries</h2>
+        <div id="entriesContainer" class="entries-container">
+            <!-- Diary entries will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
